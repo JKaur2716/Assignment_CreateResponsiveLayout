@@ -1,6 +1,29 @@
-/*
-Implement your CSS code in this file. Do not change anything in any other file.
-Only this will be graded.
-*/
+/* Navigation Flexbox */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding; 30px 0; /*30px vertical padding */
+}
 
+/* Div containers */
+
+#mainbody {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 50px;  /*100px gap and 50px bottom margin */
+}
+
+#leftContainer, #rightcontainer {
+    flex: 1;
+}
+
+#right container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 160px);
+    gap: 10px; 
+}
+/* First column is twice the width of other 2 column. Spaces as required */
