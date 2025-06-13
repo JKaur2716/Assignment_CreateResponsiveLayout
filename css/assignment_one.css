@@ -4,23 +4,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding; 30px 0; /*30px vertical padding */
+    padding: 30px 0; /*30px vertical padding */
 }
 
 /* Div containers */
 
-#mainbody {
+#mainBody {
     display: flex;
     justify-content: space-between;
     gap: 100px;
     margin-bottom: 50px;  /*100px gap and 50px bottom margin */
 }
 
-#leftContainer, #rightcontainer {
+#leftContainer, #rightContainer {
     flex: 1;
 }
 
-#right container {
+#rightContainer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(3, 160px);
