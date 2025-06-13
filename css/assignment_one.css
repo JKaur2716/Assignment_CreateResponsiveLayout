@@ -12,7 +12,7 @@ header {
 /* Div containers */
 
 #mainBody {
-    max-width: 1200px; /* or suitable desktop width */
+    max-width: 1200px; 
     margin: 0 auto;
     display: flex;
     gap: 100px;
@@ -31,10 +31,59 @@ header {
     gap: 10px;
 }
 
-/* Make the first image span all 3 rows in the first column */
+/* Image Arrangement 1 and 6 ratio */
 .gridImage.zero {
     grid-column: 1 / 2; /* first column */
     grid-row: 1 / 4;    /* span all 3 rows */
 }
 
-/* Now the rest will automatically fill the remaining cells */
+
+/* Tablet Responsiveness */
+
+@media (max-width: 1000px) {
+    body {
+        width: 60%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #mainBody {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #leftContainer,
+    #rightContainer {
+        height: auto;
+    }
+
+    #rightContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 160px);
+    }
+
+    .display_md {
+        display: none;
+    }
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 570px) {
+    body {
+        width: 80%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
